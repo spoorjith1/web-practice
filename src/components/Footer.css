@@ -1,0 +1,46 @@
+footer {
+    padding: 10px 12px 30px 12px;
+    background: rgb(3, 3, 6);
+    border-top: 1px solid #e5e7eb;
+}
+
+.foot-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+    align-items: center;
+    text-align: center;
+}
+
+.flinks {
+    display: flex;
+    gap: 1.5rem;
+}
+.flinks a {
+    text-decoration: none;
+    font-size: 1.0rem;
+    padding: 6px 2px;
+    color: #1f2937;
+}
+.flinks a:hover {
+    color: #1163fc;
+    text-decoration: wavy underline 0.5px #1163fc;
+}
+.flogo {
+    color: #1163fc;
+    font-size: 1.2rem;
+    font-weight: 600;
+}
+
+@media (min-width: 768px) {
+    .foot-container {
+        flex-direction: row;
+        justify-content: space-between;
+        text-align: left;
+    }
+    .flinks {
+        gap: 2.5rem;
+    }
+}
